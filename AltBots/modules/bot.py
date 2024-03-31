@@ -39,7 +39,7 @@ async def ping(e):
 @X10.on(events.NewMessage(incoming=True, pattern=r"\%sreboot(?: |$)(.*)" % hl))
 async def restart(e):
     if e.sender_id in SUDO_USERS:
-        await e.reply(f"`𝙳𝙰𝚁𝙺 𝚇 𝚂𝙿𝙰𝙼🫧 𝗜𝗦 𝗦𝗧𝗔𝗥𝗧𝗜𝗡𝗚.`")
+        await e.reply(f"`𝙳𝙰𝚁𝙺 𝚇 𝚂𝙿𝙰𝙼🫧 THODA WAIT KR EK BETA ADD KRA H ABHI TIYAR HO RHA GAND MARNE KE LIYE.`")
         try:
             await X1.disconnect()
         except Exception:
@@ -127,7 +127,7 @@ async def addsudo(event):
             heroku_var["SUDO_USERS"] = newsudo    
     
     elif event.sender_id in SUDO_USERS:
-        await event.reply("»𝙳𝙰𝚁𝙺 𝚇 𝚂𝙿𝙰𝙼🫧 𝗦𝗔𝗡𝗔𝗧𝗔𝗡𝗜 𝗖𝗔𝗡 𝗚𝗜𝗩𝗘 𝗦𝗨𝗗𝗢...")
+        await event.reply("»𝙳𝙰𝚁𝙺 𝚇 𝚂𝙿𝙰𝙼🫧 BSDK SIRF SANATANI SUDO DE SHKTA H TU GAND MRA...")
 
 @X1.on(events.NewMessage(incoming=True, pattern=r"\%sremovesudo(?: |$)(.*)" % hl))
 @X2.on(events.NewMessage(incoming=True, pattern=r"\%sremovesudo(?: |$)(.*)" % hl))
